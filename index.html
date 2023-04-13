@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube clone</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,56 +19,74 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="topNav">
-        <a href="#">
-          <img src="youtube-logo.png" alt="YouTube logo" class="youtube-logo" />
-        </a>
-        <div class="search-bar">
-          <form>
-            <input
-              class="search-input"
-              type="search"
-              name="seach"
-              placeholder="Search"
-              aria-label="search"
-            />
-            <button type="submit" class="search.btn">
-              <img
-                class="page-icon"
-                src="Magnifying_glass_icon.svg..png"
-                alt="Magnifying_glass_icon"
-              />
-            </button>
-          </form>
-        </div>
-        <div class="menu-icons">
-          <a href="#">
-            <img src="microphone-icon.png" alt="Search Audio" />
-          </a>
-          <a href="#">
-            <img src="video-plus.svg" alt="upload videos" />
-          </a>
-          <a href="#">
-            <img src="apps.svg" alt="search-audio" />
-          </a>
-          <a href="#">
-            <img src="bell.svg.png" alt="search-audio" />
-          </a>
-          <a href="#">
+      <div class="logo left">
+        <i id="menu" class="material-icons"></i>
+        <img
+          src="youtube-logo.png"
+          alt="YouTube logo"
+          class="youtube-logo"
+          width="45"
+          height="45"
+        />
+      </div>
+      <div class="search center">
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons"></i></button>
+        </form>
+        <i class="material-icons mic">mic</i>
+      </div>
+      <div class="icons right">
+        <i class="material-icons"></i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+
+      <!-- <a href="#">
+        <img src="youtube-logo.png" alt="YouTube logo" class="youtube-logo" />
+      </a>
+      <div class="search-bar">
+        <form>
+          <input
+            class="search-input"
+            type="search"
+            name="seach"
+            placeholder="Search"
+            aria-label="search"
+          />
+          <button type="submit" class="search.btn">
             <img
-              class="my-channel-icon"
-              src="tuomas-dog.jpg"
-              alt="my-channel"
+              class="page-icon"
+              src="Magnifying_glass_icon.svg..png"
+              alt="Magnifying_glass_icon"
             />
-          </a>
-        </div>
-      </nav>
+          </button>
+        </form>
+      </div>
+      <div class="menu-icons">
+        <a href="#">
+          <img src="microphone-icon.png" alt="Search Audio" />
+        </a>
+        <a href="#">
+          <img src="video-plus.svg" alt="upload videos" />
+        </a>
+        <a href="#">
+          <img src="apps.svg" alt="search-audio" />
+        </a>
+        <a href="#">
+          <img src="bell.svg.png" alt="search-audio" />
+        </a>
+        <a href="#">
+          <img class="my-channel-icon" src="tuomas-dog.jpg" alt="my-channel" />
+        </a>
+      </div> -->
     </header>
     <div class="sideNav"></div>
-
     <div id="content-container"></div>
   </body>
 </html>
