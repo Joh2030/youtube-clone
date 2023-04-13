@@ -1,19 +1,86 @@
 /* Joram part */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  main {
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+  }
+  .side-bar {
+    height: 100%;
+    width: 240px;
+    background-color: white;
+    overflow-y: hidden;
+  } 
+
 .youtube-logo {
     height: 20px;
 } 
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    height: 60px;
+}
+
+
+
 .search-bar {
     display: flex;
     flex-grow: 1;
     margin: 0 2rem 0 4rem;
 }
+
 .search-input {
     width: 100%;
+    font-size: inherit;
+    padding: .4em;
+    border: 1px solid #777;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #777;
+    background-color: #f8f8f8;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
 
 }
+.search-btn:hover {
+    border: #f0f0f0;
+}
+
+.menu-icons {
+    display: grid;
+    /* grid-template-columns: ; */
+    align-items: center;
+    gap: 1.5rem; 
+    width: 36px;
+    height: 36px;
+
+}
+
+.my-channel-icon {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+}
+
+/* @media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+  } */ */

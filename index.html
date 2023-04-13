@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube clone</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@0;1&family=WindSong&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -13,27 +23,30 @@
         <a href="#">
           <img src="youtube-logo.png" alt="YouTube logo" class="youtube-logo" />
         </a>
-        <form class="search-bar">
-          <input
-            class="search-input"
-            type="search"
-            name="seach"
-            placeholder="Search"
-            aria-label="search"
-          />
-          <button type="submit" class="search.btn">
-            <img
-              src="Magnifying_glass_icon.svg..png"
-              alt="Magnifying_glass_icon"
+        <div class="search-bar">
+          <form>
+            <input
+              class="search-input"
+              type="search"
+              name="seach"
+              placeholder="Search"
+              aria-label="search"
             />
-          </button>
-        </form>
+            <button type="submit" class="search.btn">
+              <img
+                class="page-icon"
+                src="Magnifying_glass_icon.svg..png"
+                alt="Magnifying_glass_icon"
+              />
+            </button>
+          </form>
+        </div>
         <div class="menu-icons">
           <a href="#">
-            <img src="microphone-icon.png" alt="search-audio" />
+            <img src="microphone-icon.png" alt="Search Audio" />
           </a>
           <a href="#">
-            <img src="video-plus.svg" alt="search-audio" />
+            <img src="video-plus.svg" alt="upload videos" />
           </a>
           <a href="#">
             <img src="apps.svg" alt="search-audio" />
@@ -44,7 +57,7 @@
           <a href="#">
             <img
               class="my-channel-icon"
-              src="tuomas-dog.jpg/36/36?gravity=center"
+              src="tuomas-dog.jpg"
               alt="my-channel"
             />
           </a>
