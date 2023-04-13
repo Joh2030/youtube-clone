@@ -4,21 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtub clone</title>
+    <title>YouTube clone</title>
     <link rel="stylesheet" href="./style.css" />
-    <nav class="topNav">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
   </head>
   <body>
+    <header class="header">
+      <nav class="topNav">
+        <a href="#">
+          <img src="youtube-logo.png" alt="YouTube logo" class="youtube-logo" />
+        </a>
+        <form class="search-bar">
+          <input
+            class="search-input"
+            type="search"
+            name="seach"
+            placeholder="Search"
+            aria-label="search"
+          />
+          <button type="submit" class="search.btn">
+            <img
+              src="Magnifying_glass_icon.svg..png"
+              alt="Magnifying_glass_icon"
+            />
+          </button>
+        </form>
+        <div class="menu-icons">
+          <a href="#">
+            <img src="microphone-icon.png" alt="search-audio" />
+          </a>
+          <a href="#">
+            <img src="video-plus.svg" alt="search-audio" />
+          </a>
+          <a href="#">
+            <img src="apps.svg" alt="search-audio" />
+          </a>
+          <a href="#">
+            <img src="bell.svg.png" alt="search-audio" />
+          </a>
+          <a href="#">
+            <img
+              class="my-channel-icon"
+              src="tuomas-dog.jpg/36/36?gravity=center"
+              alt="my-channel"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
     <div class="sideNav"></div>
 
     <div id="content-container"></div>
