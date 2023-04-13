@@ -54,8 +54,8 @@ main {
 }
 
 .video {
-    width: 280px;
-    margin-bottom: 30px;
+    max-width: 300px;
+    margin: 10px;
 }
 
 .thumbnail {
