@@ -27,9 +27,12 @@ body {
     padding: 15px;
     list-style: none;
 }
-
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
 main {
-    height: calc(100vh - 70px);
+    height:100%;
     display: flex;
     background-color: #f9f9f9;
 }
@@ -70,6 +73,7 @@ body span {
     object-fit: cover;
     height: 94%;
     width: 100%;
+    border-radius: 15px;  
 }
 
 .creator img {
@@ -161,6 +165,9 @@ span {
     .side-bar {
         display: none;
     }
+    .icons {
+      display: none;
+    }
 }
 
 /* Joram part */
@@ -197,7 +204,9 @@ input:focus {
     height: 100%;
     width: 60px;
     border: none;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 
 .mic {
