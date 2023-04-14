@@ -27,9 +27,12 @@ body {
     padding: 15px;
     list-style: none;
 }
-
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
 main {
-    height: calc(100vh - 70px);
+    height:100%;
     display: flex;
     background-color: #f9f9f9;
 }
@@ -70,6 +73,7 @@ body span{
     object-fit: cover;
     height: 94%;
     width: 100%;
+    border-radius: 15px;  
 }
 
 .creator img {
@@ -196,9 +200,9 @@ span {
     width: 60px;
     border: none;
     border-radius: 20px;
-  }
-   
-  .mic {
+}
+
+.mic {
     margin-top: 10px;
   }
   .material-icons {
