@@ -6,7 +6,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+body span{
+  font-size:inherit;
+}
 /* header section*/
 .header {
   display: flex;
@@ -18,7 +20,7 @@ body {
 
 main {
   /*   */
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: flex;
   background-color: #f9f9f9;
 }
@@ -27,14 +29,20 @@ main {
 .side-bar {
   height: 100%;
   width: 240px;
-  position: fixed;
+  position: relative;
+  top: -70px;
   margin: 20px;
-  background-color: white;
+  background-color: #f9f9f9;
   overflow-y: hidden;
 }
 
+.side-bar #myLinks {
+  display: none;
+}
 
-
+.material-symbols-outlined {
+  font-width: 200px;
+}
 
 .nav-link {
     display: flex;
@@ -69,15 +77,15 @@ main {
     width: 90%;
 }
 
-.left {
+/* .left {
   display: flex;
   align-items: center;
-}
+} */
 
-.left #menu {
-  padding: 0 7px;
-  cursor: pointer;
-}
+/* .left #menu {
+  padding: 7px;
+  /* cursor: pointer; */
+ 
 
 @media (max-width: 768px) {
   .side-bar {
