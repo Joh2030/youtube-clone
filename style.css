@@ -1,4 +1,5 @@
 * {
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,19 +24,16 @@ main {
     background-color: #f9f9f9;
 }
 
-/* Sidebar */
-.side-bar {
-    height: 100%;
-    width: 240px;
-    background-color: white;
-    overflow-y: hidden;
+  
+body span{
+  font-size:inherit;
 }
 
-@media (max-width: 768px) {
-    .side-bar {
-        display: none;
-    }
-}
+
+
+
+
+
 
 .content {
     background-color: #f9f9f9;
@@ -98,3 +96,109 @@ span {
     color: #3a3a3a;
     font-size: 14px;
 }
+
+/* Sidebar */
+.side-bar {
+  height: 100%;
+  width: 240px;
+  position: relative;
+  /* top: -60px; */
+  background-color: #ffffff;
+  overflow-y: hidden;
+}
+
+.side-bar #myLinks {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-size: 200px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    color: black;
+
+    text-decoration:none;
+  }
+  
+ .nav-link span {
+    margin-left: 10px;
+  }
+  
+ .nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+ 
+ .nav-link:active {
+  color: red;
+    background: #969696;
+ }
+
+
+
+.btn-side-bar {
+  width: 90%;
+}
+
+
+.side-bar hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+
+/* Joram part */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+ 
+
+   .search {
+    display: flex;
+   }
+   
+   .search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+    border-radius: 20px;
+   }
+   .search input {
+    width: 600px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 20px;
+    
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+  .search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+  }
+   
+  .mic {
+    margin-top: 10px;
+  }
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
+

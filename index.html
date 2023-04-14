@@ -1,24 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youtube clone</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-</head>
+  </head>
 
+  <body>
+  
+        <header class="header">
+      <div class="logo left">
+        <i id="menu" class="material-icons">menu</i>
+        <img
+          src="youtube-logo.png"
+          alt="YouTube logo"
+          class="youtube-logo"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div class="search center">
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+        <i class="material-icons mic">mic</i>
+      </div>
+      <div class="icons right">
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </header>
+    
+    <main>
+      <div class="side-bar" id="side-bar">
+        <div id="side-bar-first-section">
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> home </span>
+            <span>Home</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> youtube_activity </span>
+            <span>Shorts</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> subscriptions </span>
+            <span>Subscription</span>
+          </a>
+        </div>
 
-<body>
-  <header class="header">.</header>
-  <main>
-    <div class="side-bar">.</div>
+        <hr />
+        <div>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> video_library </span>
+            <span>Library</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> history </span>
+            <span>History</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> smart_display </span>
+            <span>My Videos</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> schedule </span>
+            <span>Watch Later</span>
+          </a>
+          <a class="nav-link" href="#youtube.com">
+            <span class="material-symbols-outlined"> thumb_up </span>
+            <span>Liked Videos</span>
+          </a>
+        </div>
+
+        <hr />
+
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> local_fire_department </span>
+          <span>Trending</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> music_note </span>
+          <span>Music</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> movie </span>
+          <span>Films and Series</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> newspaper </span>
+          <span>News</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> cell_tower </span>
+          <span>Live</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> sprint </span>
+          <span>Sport</span>
+        </a>
+        <a class="nav-link" href="#youtube.com">
+          <span class="material-symbols-outlined"> cognition </span>
+          <span>Learn</span>
+        </a>
+      </div>
+
+    
 
     <div class="content">
 
@@ -178,12 +285,11 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
-  </main>
-  <!-- Main Body Ends -->
-</body>
-
+  
+    </main>
+  
+  
+  </body>
 </html>
+
