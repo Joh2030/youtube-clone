@@ -30,9 +30,8 @@ main {
   height: 100%;
   width: 240px;
   position: relative;
-  top: -70px;
-  margin: 20px;
-  background-color: #f9f9f9;
+  /* top: -60px; */
+  background-color: #ffffff;
   overflow-y: hidden;
 }
 
@@ -41,17 +40,20 @@ main {
 }
 
 .material-symbols-outlined {
-  font-width: 200px;
+  font-size: 200px;
 }
 
 .nav-link {
     display: flex;
     align-items: center;
     padding: 12px 25px;
+    color: black;
+
+    text-decoration:none;
   }
   
  .nav-link span {
-    margin-left: 15px;
+    margin-left: 10px;
   }
   
  .nav-link:hover {
@@ -59,8 +61,9 @@ main {
     cursor: pointer;
   }
  
- .active {
-    background: #e5e5e5;
+ .nav-link:active {
+  color: red;
+    background: #969696;
  }
 
 
@@ -92,3 +95,4 @@ main {
     display: none;
   }
 }
+
